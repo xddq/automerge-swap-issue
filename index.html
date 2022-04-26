@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <!-- for using automerge -->
+        <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/automerge@1.0.1-preview.7/dist/automerge.min.js"></script>
+        <!-- for persisting to localstorage -->
+        <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/localforage"></script>
+        <script type="module" src="./index.js"></script>
+        <form id="add-item-form">
+            <input type="text" id="new-todo" />
+            <button type="submit">Add</button>
+        </form>
+        <ul id="todo-list">
+        </ul>
+        <!-- for storing data on remote server -->
+        <button id="store" type="button">Store on remote!</button>
+        <!-- for loading data from the remote server -->
+        <button id="load" type="button">Reload from remote!</button>
+        <form id="swap-item-form">
+            <input type="number" id="a" />
+            <input type="number" id="b" />
+            <button type="submit">Swap items!</button>
+        </form>
+    </body>
+</html>
